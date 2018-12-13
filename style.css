@@ -302,11 +302,6 @@ h6{
 }
 .p-list ul li{
   margin: 0 5px;
-}
-.p-list ul li .active2{
-  background-color: #FFFFFF;
-}
-.p-list ul li a{
   background-color: #ebc985;
   text-transform: uppercase;
   padding: 10px 18px;
@@ -315,7 +310,11 @@ h6{
   -o-transition: 0.25s;
   transition: 0.25s;
 }
-.p-list ul li a:hover{
+.portfolio .p-list ul .active2{
+  background-color: #FFFFFF;
+}
+
+.p-list ul li:hover{
   background-color: #FFFFFF;
 }
 .p-6{
