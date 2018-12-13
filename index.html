@@ -21,7 +21,7 @@
 
 
   <!-- Header Area starts here -->
-  <header class="header-area section">
+  <header class="header-area section" id="home">
     <div class="container text-center">
       <!-- Just an image -->
       <nav class="navbar navbar-light">
@@ -236,35 +236,36 @@
       <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
       consectetur, adipisci velit, sed quia non numquam</p>
       <div class="p-list">
-        <ul class="d-inline">
-          <li class="d-inline-block"><a href="#" class="active2">all</a></li>
-          <li class="d-inline-block"><a href="#">web</a></li>
-          <li class="d-inline-block"><a href="#">apps</a></li>
-          <li class="d-inline-block"><a href="#">icons</a></li>
+        <ul class="d-inline filter-groups">
+          <li data-filter="*" class=" btn d-inline-block active2">all</li>
+          <li data-filter=".web" class=" btn d-inline-block">web</li>
+          <li data-filter=".app" class=" btn d-inline-block">apps</li>
+          <li data-filter=".icon" class=" btn d-inline-block">icons</li>
         </ul>
       </div>
     </div>
     <div class="container ov-hidden">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-6">
-          <img src="images/1.png" alt="laptop" class="pimg">
-          <p class="text-uppercase">Isometric Perspective Mock-Up</p>
+      <div class="row grid">
+          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-6 element-item web">
+            <img src="images/1.png" alt="laptop" class="pimg">
+            <p class="text-uppercase">Isometric Perspective Mock-Up</p>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-6 element-item app">
+            <img src="images/2.png" alt="laptop" class="pimg">
+            <p class="text-uppercase">Time Zone App UI</p>
+          </div>
+
+
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-6 element-item icon">
+          <img src="images/3.png" alt="laptop" class="pimg">
+          <p class="text-uppercase">Viro Media Players UI</p>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-6">
-          <img src="images/2.png" alt="laptop" class="pimg">
-          <p class="text-uppercase">Time Zone App UI</p>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-6 element-item web">
+          <img src="images/4.png" alt="laptop" class="pimg">
+          <p class="text-uppercase">Blog / Magazine Flat UI Kit</p>
         </div>
       </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-6">
-        <img src="images/3.png" alt="laptop" class="pimg">
-        <p class="text-uppercase">Viro Media Players UI</p>
-      </div>
-      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-6">
-        <img src="images/4.png" alt="laptop" class="pimg">
-        <p class="text-uppercase">Blog / Magazine Flat UI Kit</p>
-      </div>
-    </div>
+
     <a href="#" class="btn btn-gr">load more projects</a>
     </div>
   </section>
@@ -386,47 +387,9 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/circle-progress.min.js"></script>
   <script src="js/modernizr.js"></script>
+  <script src="js/isotop.min.js"></script>
   <script src="js/custom.js"></script>
-  <!-- Custom Scripts for Circles -->
-  <script>
-  $('#cir1').circleProgress({
-    value: 0.9,
-    size: 180,
-    startAngle: 105,
-    fill: {
-      color: "#30bae7"
-    }
-  });
-</script>
-<script>
-$('#cir2').circleProgress({
-  value: 0.75,
-  size: 180,
-  startAngle: 105,
-  fill: {
-    color: "#d74680"
-  }
-});
-</script>
-<script>
-$('#cir3').circleProgress({
-  value: 0.7,
-  size: 180,
-  startAngle: 105,
-  fill: {
-    color: "#15c7a8"
-  }
-});
-</script>
-<script>
-$('#cir4').circleProgress({
-  value: 0.85,
-  size: 180,
-  startAngle: 105,
-  fill: {
-    color: "#eb7d4b"
-  }
-});
-</script>
+
+
 </body>
 </html>
